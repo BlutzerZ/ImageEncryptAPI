@@ -69,7 +69,7 @@ class Affine:
     
         _, buffer = cv2.imencode('.png', image_cv2)
         png_as_text = base64.b64encode(buffer)
-        base64_string = "data:image/png;base64," + png_as_text.decode('utf-8')
+        base64_string = png_as_text.decode('utf-8')
         
         return base64_string
 
@@ -94,7 +94,7 @@ class Affine:
     
         _, buffer = cv2.imencode('.png', image_cv2)
         png_as_text = base64.b64encode(buffer)
-        base64_string = "data:image/png;base64," + png_as_text.decode('utf-8')
+        base64_string = png_as_text.decode('utf-8')
         
         return base64_string  # Saving decrypted image
 
